@@ -1,0 +1,274 @@
+*
+{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+html body{
+    line-height: 1.4;
+    /* font-weight: 300; */
+    font-family: 'Roboto', sans-serif;
+    background: #F9F6FF;
+
+}
+.container 
+{
+    width: 90%;
+    margin: 0 auto; 
+}
+
+.navigation
+{
+    /* display: flex; */
+    justify-content: space-between;
+}
+nav
+{
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.05);
+    position: sticky;
+    background: #270082;
+    color: white;
+    top: 0px;
+    padding: 10px 0;
+    z-index: 1000;
+    align-items: center;
+}
+
+nav ul{
+    list-style: none;
+    display: flex;
+    font-size: 20px;
+    gap: 20px;
+}
+
+nav ul li
+{
+    border-bottom: 2px solid transparent;
+    transition: 0.3s ease-in;
+}
+nav ul li:hover
+{
+    border-bottom: 2px solid white;
+    transition: 0.3s ease-in;
+}
+a{
+    text-decoration: none;
+    color: white;
+}
+header{
+    background: #270082;
+    box-shadow: 5px 5px 5px rgba(0, 0 , 0 ,1.5);
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+}
+
+.image1
+{
+    background-image: url(images/hero_image.png);
+    background-size: cover;
+    color: white;
+    height: 100vh;
+    /* how to place itm in center of an image  */
+    display: grid;
+    place-items: center;
+
+    /* this is content justification */
+    justify-content: center;   
+    /*this is text alignment */
+    text-align: center;
+    gap: 20px;
+}
+
+/* make space between the contents  using gap  gap can only be used with flex */
+.image1 .conatiner
+{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    width: 80%;
+}
+
+/* fonts management */
+.large
+{
+font-size: 70px;
+font-weight: bold;
+}
+
+.small
+{
+font-size: 15px;
+}
+
+.medium
+{
+font-size: 25px;
+}
+.music-section
+{
+    height: 100vh;
+    background: #281154;
+    color: white;
+    padding-top:30px ;
+}
+
+.music-section .container
+{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    align-items: center;
+    width: 70%;
+    text-align: center;
+}
+ button{
+    padding: 10px 20px;
+    background: #DC0000;
+    color: white;
+    font-size: 15px;
+    border-style: none;
+    border-radius: 50px;
+    transition: all 1s ease-in-out;
+}
+button:hover
+{
+    padding: 15px 30px;
+    transition: 1s;
+    font-size: 20px;
+    transition: all 1s ease-in-out;
+}
+
+.macbook
+{
+    height: 100vh;
+    padding-top:30vh ;
+    margin-bottom: 25vh;
+}
+.conatiner
+{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    align-items: center;
+    width: 70%;
+    text-align: center;
+    margin: 0 auto;
+}
+.para-mac
+{
+    font-family: 'Roboto';
+}
+
+.macbook .conatiner button{
+    background: #37008E;
+    border-radius: 10px;
+}
+.video
+{
+    background-image: url(images/video.png);
+    height: 78vh;
+    color: white;
+    display: grid;
+    place-items: center;
+
+}
+
+.content 
+{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.gift .conatiner
+{
+    display: flex;
+    flex-direction: row;
+    text-align: left;
+    padding: 50px;
+}
+
+.gift .conatiner .content button
+{
+    background-color: #37008E;
+}
+
+hr{
+    border: 1px solid #9E9E9E
+}
+
+.foot .conatiner{
+    display: flex;
+    flex-direction: row;
+    width: 70%;
+    margin: 0 auto;
+    justify-content: space-between;
+    padding: 40px; 
+    color: white;
+
+}
+.foot
+{
+    background: #1B0058;
+}
+
+footer
+{
+    padding: 10px;
+    background: #270082;
+    color: white;
+    font-size: 20px;
+    text-align: center;
+
+
+}
+
+/* image effects */
+.mac-image
+{
+    transition: transform 0.3s ease-in-out;
+}
+.mac-image:hover
+{
+    transform: translateY(-10px);
+    transition: transform s ease-in-out;
+}
+
+/* iphon image  */
+.iphone-ipad-image {
+    padding: 10%;
+    transform: scale(1) translateY(0);
+    transition: transform 2s ease-in-out;
+}
+
+.iphone-ipad-image:hover {
+    transform: scale(1.1) translateY(-20px);
+    transition: transform 2s ease-in-out;
+}
+
+
+
+/* card */
+.image-card {
+    transform: perspective(1000px) rotateY(0deg);
+    transition: transform 1s ease-in-out;
+}
+
+.image-card:hover {
+    animation: flipPause 1s ease-in-out forwards;
+}
+
+@keyframes flipPause {
+    0% {
+        transform: perspective(1000px) rotateY(0deg);
+    }
+    100% {
+        transform: perspective(1000px) rotateY(360deg);
+    }
+}
+
+
